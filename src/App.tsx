@@ -11,6 +11,7 @@ import {
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { business, location } from 'ionicons/icons';
+import DatabaseProvider from './providers/DatabaseProvider';
 import Hotels from './pages/Hotels';
 import Locations from './pages/Locations';
 
@@ -48,31 +49,33 @@ setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
+    <DatabaseProvider>
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
+        <Route exact path="/locations">
+            <Locations />
+          </Route>
           <Route exact path="/hotels">
             <Hotels />
           </Route>
-          <Route exact path="/locations">
-            <Locations />
-          </Route>
           <Route exact path="/">
-            <Redirect to="/hotels" />
+            <Redirect to="/locations" />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
+        <IonTabButton tab="locations" href="/locations">
+            <IonIcon aria-hidden="true" icon={location} />
+            <IonLabel>Locations</IonLabel>
+          </IonTabButton>
           <IonTabButton tab="hotels" href="/hotels">
             <IonIcon aria-hidden="true" icon={business} />
             <IonLabel>Hotels</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="locations" href="/locations">
-            <IonIcon aria-hidden="true" icon={location} />
-            <IonLabel>Locations</IonLabel>
-          </IonTabButton>
         </IonTabBar>
       </IonTabs>
-    </IonReactRouter>
+      </IonReactRouter>
+    </DatabaseProvider>
   </IonApp>
 );
 

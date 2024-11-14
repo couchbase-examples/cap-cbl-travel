@@ -29,8 +29,8 @@
 # ios 
 ios/DerivedData/*
 ios/App/App/public/assets/*
-Pods
-Podfile.lock
+ios/App/Pods
+ios/App/Podfile.lock
 Build
 xcuserdata
 
