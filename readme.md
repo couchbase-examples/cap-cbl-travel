@@ -2,7 +2,7 @@
 
 # Overview
 
-This is an example app of a simple Capacitor app that uses the [Couchbase Lite](https://www.couchbase.com/products/lite) database. The app lists a set of Landmarks and Hotels that are provided as part of the [Couchbase Travel-Sample](https://docs.couchbase.com/cloud/get-started/run-first-queries.html) dataset. 
+This is an example app of a simple Ionic Capacitor React app that uses the [Couchbase Lite](https://www.couchbase.com/products/lite) database. The app lists a set of Landmarks and Hotels that are provided as part of the [Couchbase Travel-Sample](https://docs.couchbase.com/cloud/get-started/run-first-queries.html) dataset. 
 
 This app assumes you have a Capella Free Tier operational cluster with the travel-sample dataset installed.  To find out more information about the free tier, please visit this blog post [Couchbase Cloud](https://www.couchbase.com/blog/free-tier-capella-dev-available/).
 
@@ -55,8 +55,8 @@ Click on the `Connect` tab on the navigation menu in the header of the page.  Th
 From a terminal you can use the git command to pull down the code from the repository:
 
 ```bash
-git clone https://github.com/couchbase-examples/couchbase-tutorials.git
-cd cap-cbl-travel-hotels
+git clone https://github.com/couchbase-examples/cap-cbl-travel
+cd cap-cbl-travel
 ````
 
 ## Set up the Mobile App 

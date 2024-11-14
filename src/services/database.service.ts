@@ -281,7 +281,7 @@ export class DatabaseService {
             //****************************************************************
             //YOU MUST CHANGE THIS TO YOUR LOCAL IP ADDRESS OR TO YOUR CAPELLA CONNECTION STRING
             //****************************************************************
-            const targetUrl = new URLEndpoint('wss://1oooidqy0vm9-t3y.apps.cloud.couchbase.com:4984/travel-location');
+            const targetUrl = new URLEndpoint('wss://xxxxxx.apps.cloud.couchbase.com:4984/travel-location');
 
             //****************************************************************
             //YOU MUST CREATE THIS USER IN YOUR SYNC GATEWAY CONFIGURATION OR CAPPELLA APP SERVICE ENDPOINT
