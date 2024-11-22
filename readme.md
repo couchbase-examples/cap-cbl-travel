@@ -79,6 +79,9 @@ To run an Capacitor app, you can use the following command:
 
 ```shell
 npm install
+
+npm build
+
 npm cap sync
 ```
 
