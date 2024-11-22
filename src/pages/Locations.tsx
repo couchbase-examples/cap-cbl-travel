@@ -150,7 +150,7 @@ const Locations: React.FC = () => {
           <NoLandmark />
         ) : (
           <IonList>
-            {filteredLandmarks.map((item) => (
+            {filteredLandmarks.map((item: any) => (
               <IonItem>
                 <LocationCard landmark={item.landmark} />
               </IonItem>

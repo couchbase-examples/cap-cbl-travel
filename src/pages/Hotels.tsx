@@ -110,7 +110,7 @@ const Hotels: React.FC = () => {
           <NoHotel />
         ) : (
           <IonList>
-            {filteredHotels.map((item) => (
+            {filteredHotels.map((item: any) => (
               <IonItem>
                 <HotelCard hotel={item.hotel} />
               </IonItem>
