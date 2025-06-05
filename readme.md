@@ -80,7 +80,7 @@ To run an Capacitor app, you can use the following command:
 ```shell
 npm install
 
-npm build
+npm run build
 
 npm cap sync
 ```
